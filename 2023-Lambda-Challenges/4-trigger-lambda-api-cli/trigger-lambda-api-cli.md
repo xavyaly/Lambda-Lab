@@ -1,20 +1,8 @@
 To trigger an AWS Lambda function using API Gateway via AWS CLI, you can follow these steps:
 
-Follow the steps [here](https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11)
+Step-1:
+Create a Role, Files, Zip and Function from [here](https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11)
 
-Step 1: Create the Lambda function (if not already created)
-If you haven't created the Lambda function yet, you can use the following AWS CLI command to create it:
-
-```bash
-aws lambda create-function \
-  --function-name MyLambdaFunction \
-  --runtime python3.8 \
-  --handler lambda_function.lambda_handler \
-  --role arn:aws:iam::YOUR_ACCOUNT_ID:role/YourLambdaRole \
-  --zip-file fileb://path/to/your/lambda_function.zip
-```
-
-Make sure to replace `MyLambdaFunction` with your desired Lambda function name, and `YOUR_ACCOUNT_ID` with your actual AWS account ID. The `--zip-file` flag points to a ZIP file containing your Python Lambda function code.
 
 Step 2: Create the API Gateway
 
@@ -26,6 +14,8 @@ aws apigateway create-rest-api \
 ```
 
 Replace `MyAPIGateway` with the desired name for your API Gateway.
+
+### BLOCKED FROM HERE -> WILL RESUME LATER"
 
 Step 3: Create a Resource and Method
 
