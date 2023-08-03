@@ -5,3 +5,4 @@ aws apigateway create-resource \
   --parent-id "/" \
   --path-part "myresource"
 
+# FAILED

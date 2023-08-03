@@ -3,3 +3,4 @@
 aws apigateway create-rest-api \
   --name MyAPIGateway
 
+# SUCCESS

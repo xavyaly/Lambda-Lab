@@ -8,3 +8,5 @@ aws lambda create-function \
     --timeout 5 \
     --zip-file "fileb://./app.zip" \
     --region "us-east-2"
+
+# SUCCESS
