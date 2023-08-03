@@ -1,6 +1,6 @@
 To trigger an AWS Lambda function using API Gateway via AWS CLI, you can follow these steps:
 
-Follow the steps here
+Follow the steps [here](https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11)
 
 Step 1: Create the Lambda function (if not already created)
 If you haven't created the Lambda function yet, you can use the following AWS CLI command to create it:
