@@ -1,12 +1,12 @@
 # Lambda-Lab
 
-Scenario-1: 
+# Scenario-1: 
 Write a Lambda Function to take data from event and write date into DynamoDB ?
 
-Scenario-2:
+# Scenario-2:
 Suppose an imgae populated in S3, Write a function in Lambda so to reduce the size of the iamge to 5MB ?
 
-Scenario-3:
+# Scenario-3:
 Suppose there is an API call which gives 2 nos, Write a Lambda function to generate a random nos between these 2 nos ?
 
 
@@ -24,16 +24,16 @@ Fewer lines of code
 Sequential and Parallel execution support by passing behavior as an argument in methods
 Can help you run your code whether it is for high computational infrastructure or it’s for low coding or any other type of management or monitoring of codes and servers.
 
-Scenario-4:
+# Scenario-4:
 How can you invoke a Lambda Function ? and what will happend when Lambda invoked ?
 Sol:
 Supose you have a single request, once Lambda invoked through any services (CW/S3/data/API) it automatically creates a container and handle to reduce suppose image size moving forward if request increases, container keep on increasing as per the calculation, moreover if there are 100 request then may be Lambda would have created 33-34 request and once the request decreases lambda automatically killed the containers as per load decreases, at the last if no data would arrive then there won't be any container and end uses no need to pay any cost.
 
-Scenario-5:
+# Scenario-5:
 Create a Lambda function through UI and Test it ?
 
 
-Scenario-6:
+# Scenario-6:
 Handler Function -> FILE_NAME.EXPORTED_FUNCTION_NAME -> Mandatory else error throws
 Sol:
 In AWS Lambda, the handler function is the entry point for your serverless function. When you invoke a Lambda function, AWS Lambda executes the handler function, passing the event data and context to it. The handler function must be defined in the code, and its signature depends on the programming language used.
@@ -76,7 +76,7 @@ Finally, the `lambda_handler` function returns a response in the format of a dic
 Note that the code structure and function names can vary based on the programming language used (e.g., Node.js, Java, Go, etc.), but the concept of the handler function as the entry point remains the same across different languages when using AWS Lambda.
 
 
-Scenario-7:
+# Scenario-7:
 event in lambda function with example
 Sol:
 In AWS Lambda, the `event` parameter is a dictionary that contains the input data sent to the Lambda function. The format of the `event` data depends on the event source that triggers the Lambda function. Different event sources, such as API Gateway, S3, DynamoDB, CloudWatch Events, etc., pass different data structures in the `event` parameter.
@@ -145,7 +145,7 @@ In this example, the `lambda_handler` function takes the `event` and `context` p
 These are just a few examples of how you can use the `event` parameter in a Lambda function. The actual structure and content of the `event` data depend on the specific event source that triggers the Lambda function.
 
 
-Scenario-8:
+# Scenario-8:
 Event in Lambda function ?
 Sol:
 event basically provides the runtime information of the lambda function 
@@ -210,7 +210,7 @@ Remaining time (ms): 8000
 Remember that the context properties and methods may vary depending on the programming language used to write the Lambda function. Additionally, the context provides other useful information, such as the CloudWatch log group and log stream names, which can be helpful for more advanced use cases.
 
 
-Scenario-9:
+# Scenario-9:
 List of context properties in lambda function ?
 Sol:
 In AWS Lambda, the `context` parameter provides several properties that offer information about the Lambda environment and function execution. These properties are accessible within the Lambda function and can be used to obtain useful details about the context in which the function is running. Here is a list of context properties available in a Lambda function:
@@ -261,7 +261,7 @@ def lambda_handler(event, context):
 This Lambda function extracts various context properties and returns them as part of the response body in JSON format. When this function is invoked, it will include information about the Lambda function, its version, ARN, memory limit, request ID, and the associated CloudWatch log group and log stream.
 
 
-Scenario-10:
+# Scenario-10:
 list of context methods in lambda function ?
 Sol:
 In AWS Lambda, the `context` parameter provides a few methods that allow you to access specific information about the Lambda environment and function execution. Here is a list of context methods available in a Lambda function:
@@ -296,7 +296,7 @@ def lambda_handler(event, context):
 Please note that the context object in AWS Lambda might have different methods and properties based on the programming language used (e.g., Python, Node.js, Java, etc.). The methods mentioned above are common in most Lambda runtime environments and can be used to access useful information during function execution.
 
 
-Scenario-11:
+# Scenario-11:
 callback function in lambda with example 
 Sol:
 In AWS Lambda, a callback function is a function that you can use to notify the Lambda runtime that your asynchronous function has completed its execution. This is typically used when you have an asynchronous operation in your Lambda function, such as writing to a database, making an API call, or processing a long-running task. By using a callback function, you can signal the Lambda runtime that the operation has finished and return the result.
@@ -340,7 +340,7 @@ Once the callback is called, the Lambda function execution is complete, and the 
 Using a callback function allows you to work with asynchronous operations in AWS Lambda, making it possible to perform tasks that take time to complete without blocking the execution of your function.
 
 
-Scenario-11:
+# Scenario-11:
 logging in lambda function ?
 Sol:
 In AWS Lambda, logging is essential for debugging, monitoring, and understanding the behavior of your functions. You can use various logging methods to record information within your Lambda function. The most common logging method is using the `console` object to log messages, which will appear in the Lambda function's CloudWatch logs.
@@ -392,7 +392,7 @@ When the Lambda function is invoked, the messages logged using `console.log` wil
 By logging information, you can monitor the function's behavior and troubleshoot any issues that may arise during execution. It's essential to log relevant details about the function's inputs, outputs, and any errors that might occur. However, remember to avoid excessive logging, as it can generate unnecessary log data and add latency to the function's execution. Use logging judiciously to strike a balance between getting useful insights and minimizing unnecessary costs.
 
 
-Scenario-12:
+# Scenario-12:
 names of log functions in lambda 
 Sol:
 In AWS Lambda, you can use the following log functions to record information in your function's logs:
@@ -420,7 +420,7 @@ In AWS Lambda, you can use the following log functions to record information in 
 Please note that the availability of these log functions depends on the runtime and the programming language you are using in your Lambda function. The examples provided above are for Node.js and Python, which are two common languages used in Lambda functions. If you are using a different programming language, the log functions might have slightly different names or behaviors.
 
 
-Scenario-13:
+# Scenario-13:
 Create a Lambda function through CLI:
 
 Refer to this code: 
